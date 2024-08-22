@@ -2,7 +2,7 @@ import { dogsData } from "./data";
 import { useState } from "react";
 import DogDetails from "./DogDetails";
 
-import { v1 as generateUniqueID } from "uuid";
+import {v4 as uuidv4} from "uuid"
 
 function App() {
   const [dogs, setDogs] = useState(dogsData);
